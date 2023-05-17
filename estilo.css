@@ -1,0 +1,75 @@
+/*estilos generales */
+html{
+    font-family: 'Poppins',sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(88, 124, 192,.8);
+    color: black;
+}
+
+
+/*estilos de AGREGARALUMNOS*/
+.container{
+    height: 100vh;
+    width: 70vw;
+    margin: 2rem auto;
+}
+.container h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+.formulario-datos{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+/* estilo de las letras del input*/
+.formulario-datos input{
+    margin: 1rem 0rem;
+    line-height: 3 rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: rgb(242, 250, 242);
+
+}
+
+.formulario-datos input :active{
+    border-bottom: 1px solid darkblue;
+}
+.formulario-datos input:focus{
+    border-bottom: 1px solid darkblue ;
+}
+.formulario-datos button{
+    
+    margin: 1rem 0rem;
+    background-color: rgb(231, 231, 241);
+    border: 0;
+    outline: 0;
+    height: 4rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: rgb(236, 26, 26);
+
+}
+.listado{
+    display: flex;
+    flex-direction: column;
+
+}
+.tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3rem;
+
+}
+.icono{
+    color: brown;
+    cursor: pointer;
+}
