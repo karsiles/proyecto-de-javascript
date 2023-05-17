@@ -30,19 +30,26 @@
         <input type="text" name="" class="descripcion" placeholder="descripcion">
         <br>
         <button id="btn" type="submit"> Agregar alumno</button>
-        <div id="mostrarAlumnosDeMatematica"> Lista de alumnos ya agregados</div>
+        
+        <div id="mostrarAlumnosDeMatematica"> Lista de alumnos ya agregados
+            
+        </div>
+        
     </form>
-    <div class="listado">
+    <div id="borrador">
+        <div class="listado">
         <div class="tarea">
             <h2>nombre</h2>
             <p>apellido</p>
             <p>descripcion</p>
-            <span class="material-symbols-outlined icono">
+            <span class="material-symbols-outlined icono" onclick="removeEventListener">
                 delete
         </span>
         </div>
+        
 
-    </div>
+    </div></div>
+    
     <br>
     <div>
         <h4>filtrar por apellido</h4>
@@ -53,6 +60,7 @@
            <option value="zacarias">zacarias</option>
            <option value="rosales">rosales</option>
            <option value="perez">perez</option>
+           
         </select>
         <br>
         <p id="mostrarPorApellido"></p>
@@ -62,7 +70,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     
-    
+    <script src="extra.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

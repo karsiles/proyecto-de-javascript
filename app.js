@@ -1,8 +1,6 @@
-//lista de alumnos para clases particulares de matematica
+//lista de alumnos para clases particulares de matemática
 // ver datos de cada alumnos y agregar nuevos alumnos al curso
 //cada vez que se cree un alumno se le asignara un id
-
-
 
 
 let id =0
@@ -56,9 +54,6 @@ const{nombre,apellido,descripcion} =uba
 //form padre al dom
 let agregarAlumnos =document.getElementById("agregarAlumnos")
 
-let btn= document.getElementById('btn')
-let IconoBorrar= document.createElement('span')
-
 //agregar un nuevo alumno
 
 const crearAlumno= (e) =>{ e.preventDefault()
@@ -73,6 +68,7 @@ const crearAlumno= (e) =>{ e.preventDefault()
         descripcion.children[5].value,
      );
      alumnosDeMatematica.push(alumnoNuevo)
+    
 
     //mostrar el resultado 
     let mostrarAlumnosDeMatematica= document.getElementById("mostrarAlumnosDeMatematica")
@@ -86,6 +82,7 @@ for (const dato of alumnosDeMatematica) {
 
 mostrarAlumnosDeMatematica.appendChild(li) 
  btn.addEventListener('click',alerta)
+ 
  function alerta(){
     swal("alumno agregado");
  }
@@ -93,7 +90,9 @@ mostrarAlumnosDeMatematica.appendChild(li)
 }
 }
 
-
+// btn
+let btn= document.getElementById('btn')
+let IconoBorrar= document.createElement('span')
 
 //evento 
 // agregarAlumnos.addEventListener("submit",crearAlumno)
