@@ -82,7 +82,7 @@ const crearAlumno= (e) =>{ e.preventDefault()
 //crear un li 
 for (const dato of alumnosDeMatematica) {
    let li = document.createElement("li") 
-   li.innerHTML= `nombre del alumno: <b>${dato.nombre}</b> apellido del alumno <b>${dato.apellido}</b> descripcion del alumno <b>${dato.descripcion}</b>`
+   li.innerHTML= `nombre del alumno: <b>${dato.nombre}</b> apellido del alumno <b>${dato.apellido}</b> descripcion del alumno <b>${dato.descripcion}</b>` 
 
 mostrarAlumnosDeMatematica.appendChild(li) 
  btn.addEventListener('click',alerta)
@@ -90,8 +90,6 @@ mostrarAlumnosDeMatematica.appendChild(li)
     swal("alumno agregado");
  }
  
- 
-
 }
 }
 
